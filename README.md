@@ -10,7 +10,9 @@ This project uses machine learning classification algorithms to predict whether 
 The local health department wants to address the prevalence of diabetes in their community. A classification model for diabetes can predict which people are at risk as well as identify key risk factors that can be addressed with targeted health interventions.
 
 ## Data
-This project uses 2015 survey data from the CDC's Behavioral Risk Factor Surveillance System. The dataset contains information about the health and lifestyle of 72,692 people. The target variable in this dataset is a binary with values of 1 meaning a person is pre-diabetic or diabetic and 0 meaning they are not pre-diabetic or diabetic.
+This project uses 2015 survey data from the CDC's Behavioral Risk Factor Surveillance System. The dataset contains information about the health and lifestyle of 72,692 people. The target variable in this dataset is a binary with values of 1 meaning a person is pre-diabetic or diabetic and 0 meaning they are not pre-diabetic or diabetic. The datset used is balanced.
+
+![balanced_data](./images/balanced_data.png)
 
 ## Method
 The analysis uses classification algorithms to predict a binary diabetes variable. Iterating through multiple classification algorithms, XGBoost was determined to be the optimal model based on accuracy and recall scores.
@@ -18,7 +20,7 @@ The analysis uses classification algorithms to predict a binary diabetes variabl
 ## Results
 The final XGBoost model has a 76% accuracy and 80% recall.
 
-The final model included 31 predictor variables. Of those, general health, high blood pressure, and BMI were the three most significant predictors of diabetes.
+The final model included 27 predictor variables. Of those, general health, high blood pressure, and BMI were the three most significant predictors of diabetes.
 
 ![feature_importance](./images/feature_importance.png)
 
